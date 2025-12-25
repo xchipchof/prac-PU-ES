@@ -1,13 +1,15 @@
 package data;
 
-public class ePrescripCode {
+import data.exceptions.MalformedPrescriptionCodeException;
+
+final public class ePrescripCode {
     private final String code;
 
     public ePrescripCode(String code){
         if (code == null)
             throw new IllegalArgumentException("Null not allowed as prescription code.");
-        if (!code.matches("^[0-9]+$"))
-            throw new IllegalArgumentException("Code contains characters other than numbers.");
+        if (!code.matches("^[0-9]+$") || code.length() != 10)
+            throw new MalformedPrescriptionCodeException("Code contains characters other than numbers.");
         this.code= code;
     }
 

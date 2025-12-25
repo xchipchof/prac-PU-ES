@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aec94b9b-6f54-4c58-8d98-b0150d60dc36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/data/DigitalSignatureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac-PU-ES.iml" beforeDir="false" afterPath="$PROJECT_DIR$/prac-PU-ES.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/data/ePrescripCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/data/ePrescripCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/data/exceptions/MalformedPrescriptionCodeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/data/exceptions/MalformedPrescriptionCodeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/data/DigitalSignatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/data/DigitalSignatureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/data/ePrescripCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/data/ePrescripCodeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Exception" />
       </list>
     </option>
   </component>
@@ -51,6 +52,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "paquet-data-impl",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/xhip/Escritorio/work/IS/practicas/prac-PU-ES/.idea/workspace.xml",

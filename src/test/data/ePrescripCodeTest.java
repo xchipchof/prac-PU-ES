@@ -4,6 +4,7 @@ import data.ePrescripCode;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import data.exceptions.MalformedPrescriptionCodeException;
 import org.junit.jupiter.api.Test;
 
 public class ePrescripCodeTest {
@@ -19,7 +20,7 @@ public class ePrescripCodeTest {
     @Test
     public void codiNoNumeric(){
         String codiLleig = "dbashj281sajhdb";
-        assertThrows(IllegalArgumentException.class,
+        assertThrows(MalformedPrescriptionCodeException.class,
                 () -> new ePrescripCode(codiLleig)
         );
     }
