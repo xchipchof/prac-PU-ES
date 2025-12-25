@@ -2,7 +2,6 @@ package data;
 
 
 import data.exceptions.InvalidDigitalSignatureFormatException;
-import data.DigitalSignature;
 
 import org.junit.jupiter.api.Test;
 

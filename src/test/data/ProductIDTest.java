@@ -1,6 +1,5 @@
 package data;
 
-import data.ProductID;
 import data.exceptions.NonUPCFormatException;
 
 import org.junit.jupiter.api.Test;

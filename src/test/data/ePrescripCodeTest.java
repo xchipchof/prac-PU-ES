@@ -1,7 +1,5 @@
 package data;
 
-import data.ePrescripCode;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 import data.exceptions.MalformedPrescriptionCodeException;
