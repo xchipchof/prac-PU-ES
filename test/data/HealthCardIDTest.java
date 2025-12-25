@@ -1,6 +1,7 @@
 package data;
 
 import data.HealthCardID;
+import data.exceptions.NotAlphanumericFormatException;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -22,7 +23,7 @@ public class HealthCardIDTest {
     public void arribaNoAlfanumericAlConstructorTest(){
 
         assertThrows(
-                IllegalArgumentException.class,
+                NotAlphanumericFormatException.class,
                 () -> new HealthCardID("\uD83D\uDE0B")
         );
 

@@ -1,13 +1,16 @@
 package data;
+import data.exceptions.NotAlphanumericFormatException;
 
 final public class HealthCardID {
     private final String personalID;
 
     public HealthCardID(String code) throws IllegalArgumentException {
         if (code == null)
-                throw new IllegalArgumentException("No nulls allowed as HealthCardID's");
-        if (code.length() != 16 || code.matches("[A-Za-z0-9]"))
-            throw new IllegalArgumentException("Code does not comply with the HealthCardID format");
+                throw new IllegalArgumentException("No nulls allowed as HealthCardID codes.");
+        if (code.matches("[A-Za-z0-9]"))
+            throw new NotAlphanumericFormatException("Code contains digits that are not allowed as the HealthCardID format defined.");
+        if (code.length() != 16)
+            throw new IllegalArgumentException("Code length is not of 16 valid digits.");
         this.personalID = code;
     }
 
