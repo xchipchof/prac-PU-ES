@@ -3,7 +3,11 @@ package data;
 final public class HealthCardID {
     private final String personalID;
 
-    public HealthCardID(String code) {
+    public HealthCardID(String code) throws IllegalArgumentException {
+        if (code == null)
+                throw new IllegalArgumentException("No nulls allowed as HealthCardID's");
+        if (code.length() != 16 || code.matches("[A-Za-z0-9]"))
+            throw new IllegalArgumentException("Code does not comply with the HealthCardID format");
         this.personalID = code;
     }
 
