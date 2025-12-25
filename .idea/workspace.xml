@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aec94b9b-6f54-4c58-8d98-b0150d60dc36" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/java/data/ePrescripCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/data/ePrescripCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/data/exceptions/MalformedPrescriptionCodeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/data/exceptions/MalformedPrescriptionCodeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/data/DigitalSignatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/data/DigitalSignatureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/data/ePrescripCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/data/ePrescripCodeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/data/DigitalSignature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/data/exceptions/InvalidDigitalSignatureFormatException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Exception" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,6 +45,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.DigitalSignatureTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -66,6 +66,28 @@
       <recent name="$PROJECT_DIR$/src/java" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DigitalSignatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prac-PU-ES" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data" />
+      <option name="MAIN_CLASS_NAME" value="data.DigitalSignatureTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DigitalSignatureTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
