@@ -7,7 +7,7 @@ import java.util.Arrays;
 final public class DigitalSignature {
     private final byte[] signature;
 
-    public DigitalSignature(byte[] signatura){
+    public DigitalSignature(byte[] signatura) throws IllegalArgumentException, InvalidDigitalSignatureFormatException{
         if (signatura == null)
             throw new IllegalArgumentException("DigitalSignature cannot be instantiated with null");
         if (signatura.length != 64)

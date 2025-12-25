@@ -5,7 +5,7 @@ import data.exceptions.MalformedPrescriptionCodeException;
 final public class ePrescripCode {
     private final String code;
 
-    public ePrescripCode(String code){
+    public ePrescripCode(String code) throws IllegalArgumentException, MalformedPrescriptionCodeException{
         if (code == null)
             throw new IllegalArgumentException("Null not allowed as prescription code.");
         if (!code.matches("^[0-9]+$") || code.length() != 10)
