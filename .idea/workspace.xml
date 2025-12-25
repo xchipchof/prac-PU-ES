@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aec94b9b-6f54-4c58-8d98-b0150d60dc36" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/data/HealthCardID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/data/HealthCardID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ProductID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/data/ProductID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ePrescripCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/data/ePrescripCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/exceptions/NonUPCFormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/data/exceptions/NonUPCFormatException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/exceptions/NotAlphanumericFormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/data/exceptions/NotAlphanumericFormatException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/data/HealthCardIDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/data/HealthCardIDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/data/ProductIDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/data/ProductIDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/data/ePrescripCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/data/ePrescripCodeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/data/DigitalSignatureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac-PU-ES.iml" beforeDir="false" afterPath="$PROJECT_DIR$/prac-PU-ES.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/data/ePrescripCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/data/ePrescripCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,27 +35,34 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="37Le9WTCXOsj1JBAajrexdaLzYl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "paquet-data-impl",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/xhip/Escritorio/work/IS/practicas/prac-PU-ES/.idea/workspace.xml",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/java" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="TaskManager">
