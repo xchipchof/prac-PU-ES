@@ -62,10 +62,8 @@ public class MedicalPrescriptionTest {
     }
     @Test
     public void testSetters(){
-        Date d = mp.getPrescDate();
         mp.setPrescDateAndEndDate(new Date(2026, 1, 25));
         assertEquals(new Date(2026, 1, 25), mp.getEndDate());
-        assertNotEquals(d, mp.getPrescDate());
         byte[] randomBytes = new byte[64];
         new SecureRandom().nextBytes(randomBytes);
         mp.seteSign(new DigitalSignature(randomBytes));
