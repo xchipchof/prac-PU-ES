@@ -1,5 +1,7 @@
 package medicalconsultation;
 
+import data.ProductID;
+
 public class Posology { // A class that represents the posology of a medicine
 
     private float dose;
@@ -35,5 +37,18 @@ public class Posology { // A class that represents the posology of a medicine
     }
     public void setDose(float dose){
       this.dose = dose;
+    }
+    public void setFreq(float freq, FqUnit freqUnit){
+        this.freq = freq;
+        this.freqUnit = freqUnit;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Posology posology = (Posology) o;
+        return this.dose == posology.dose && this.freq == posology.freq && this.freqUnit == posology.freqUnit;
     }
 }

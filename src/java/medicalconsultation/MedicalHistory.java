@@ -1,6 +1,6 @@
 package medicalconsultation;
-
 import data.HealthCardID;
+import medicalconsultation.exceptions.IncorrectParametersException;
 
 /**
  * Package for the classes involved in the use case Supervise treatment
@@ -25,16 +25,19 @@ public class MedicalHistory {// A class that represents a medical history
         this.history = null;
     }
 
-    // Makes its inicialization
     public void addMedicalHistoryAnnotations (String annot) {
-        this.history += annot + "\n";
+
+        if(this.history == null) {
+            this.history = annot+"\n";
+        } else {
+            this.history += annot+"\n";
+        }
     }
 
-    // Adds new annotations to the patient history
     public void setNewDoctor (int mshN)  { // Modifies the family doctor for patient
         this.membShipNumb = mshN;
     }
-     // the getters
+
     public HealthCardID getHealthCardID(){
         return this.cip;
     }

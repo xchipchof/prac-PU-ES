@@ -45,5 +45,12 @@ public class TakingGuideline { // Represents the taking guidelines for a medicin
     public void setInstructions(String instructions){
         this.instructions = instructions;
     }
-}
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
+        TakingGuideline takingGuideline = (TakingGuideline) o;
+        return this.dMoment == takingGuideline.dMoment && this.posology.equals(takingGuideline.posology) && this.instructions == takingGuideline.instructions;
+    }
+}

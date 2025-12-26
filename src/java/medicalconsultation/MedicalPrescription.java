@@ -1,11 +1,10 @@
 package medicalconsultation;
 
+import data.*;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
-import data.*;
-
+import medicalconsultation.exceptions.*;
 public class MedicalPrescription {// A class that represents medical prescription
 
     private HealthCardID cip; // the healthcard ID of the patient
@@ -25,14 +24,14 @@ public class MedicalPrescription {// A class that represents medical prescriptio
     private Map<ProductID,TakingGuideline> prescriptions;
 
     // Its components, that is, the set of medical prescription lines
-    public MedicalPrescription (HealthCardID cip, int mSN, String i, ePrescripCode pC, Date eD, DigitalSignature eS) {    
+    public MedicalPrescription (HealthCardID cip, int mSN, String i, ePrescripCode pC, Date eD) {
         this.cip = cip;
         this.membShipNumb = mSN;
         this.illness = i;
         this.prescCode = pC;
         this.prescDate = new Date();
         this.endDate = eD;
-        this.eSign = eS;
+        this.eSign = null;
         this.prescriptions = new HashMap<>();
     } // Makes some inicialization
 
@@ -41,6 +40,9 @@ public class MedicalPrescription {// A class that represents medical prescriptio
             IncorrectTakingGuidelinesException {
                 if(this.prescriptions.containsKey(prodID)){
                         throw new ProductAlreadyInPrescriptionException("El producto ya esta recetado");
+                }
+                if(instruc.length != 6){
+                    throw new IncorrectTakingGuidelinesException("Cantidad de instrucciones incorrecto");
                 }
                 try{
                     dayMoment dM = dayMoment.valueOf(instruc[0]);
@@ -53,7 +55,7 @@ public class MedicalPrescription {// A class that represents medical prescriptio
                     this.prescriptions.put(prodID, takingGuideline);
                     
                 } catch (Exception e) {
-                    throw new IncorrectTakingGuidelinesException("Cantidad de instrucciones/Formato incorrecto");
+                    throw new IncorrectTakingGuidelinesException("Formato de instrucciones incorrecto");
                 }
             }
 
@@ -74,18 +76,38 @@ public class MedicalPrescription {// A class that represents medical prescriptio
                 }
                 this.prescriptions.remove(prodID);
             }
-    // the getters and setters for some of the class members
+
     public void setPrescDateAndEndDate(Date endDate) {
         this.endDate = endDate;
-        this.prescDate = new Date(); // Actualiza la fecha de prescripción a "ahora"
+        this.prescDate = new Date();
     }
-
+    
     public void seteSign(DigitalSignature eSign) {
         this.eSign = eSign;
     }
-    
-    // Necesario para leer la prescripción
+
     public DigitalSignature geteSign() {
         return eSign;
+    }
+    public HealthCardID getCip() {
+        return cip;
+    }
+    public int getMembShipNumb() {
+        return membShipNumb;
+    }
+    public String getIllness() {
+        return illness;
+    }
+    public ePrescripCode getPrescCode() {
+        return prescCode;
+    }
+    public Date getPrescDate() {
+        return prescDate;
+    }    
+    public Date getEndDate() {
+        return endDate;
+    }
+    public  TakingGuideline getTakingGuideline(ProductID prodID) {
+        return this.prescriptions.get(prodID);
     }
 }
