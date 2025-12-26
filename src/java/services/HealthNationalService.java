@@ -1,6 +1,11 @@
 package services;
 
 import data.HealthCardID;
+import medicalconsultation.MedicalHistory;
+import medicalconsultation.MedicalPrescription;
+import services.exceptions.HealthCardIDException;
+import services.exceptions.AnyCurrentPrescriptionException;
+import services.exceptions.NotCompleteMedicalPrescription;
 
 import java.net.ConnectException;
 
@@ -11,7 +16,7 @@ public interface HealthNationalService {
     MedicalPrescription getMedicalPrescription(HealthCardID cip, String illness) 
             throws ConnectException, HealthCardIDException, AnyCurrentPrescriptionException;
     
-    MedicalPrescription sendHistoryAndPrescription(HealthCardID cip, History hce, String  illness, MedicalPrescription mPresc) 
+    MedicalPrescription sendHistoryAndPrescription(HealthCardID cip, MedicalHistory hce, String  illness, MedicalPrescription mPresc)
             throws ConnectException, HealthCardIDException,AnyCurrentPrescriptionException, NotCompleteMedicalPrescription;
     
     MedicalPrescription generateTreatmCodeAndRegister(MedicalPrescription ePresc) 
