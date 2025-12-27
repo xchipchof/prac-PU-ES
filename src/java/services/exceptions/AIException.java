@@ -1,6 +1,6 @@
 package services.exceptions;
 
-public class AIException extends RuntimeException {
+public class AIException extends Exception {
     public AIException(String message) {
         super(message);
     }
