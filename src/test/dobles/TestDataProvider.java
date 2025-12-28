@@ -74,8 +74,14 @@ public class TestDataProvider {
     }
 
     public static String generaPrompt() {
-        return "Sugiere cambios para el tratamiento del resfriado del paciente.";
+        return "Respuesta de la IA (Sugerencias para Gripe):\n" +
+                "Producto      | Dosis | Frec. | Instrucciones        | Acción\n" +
+                "--------------------------------------------------------------\n" +
+                "243516578917  | 1.0   | 1.0   | Tomar con agua       | I\n" +
+                "640557143200  | ----- | ----- | -------------------- | R\n" +
+                "243516578917  | 3.0   | ----- | -------------------- | M";
     }
+
 
     public static List<Suggestion> generaSuggestions() throws Exception {
         List<Suggestion> suggestions = new ArrayList<>();
@@ -87,7 +93,7 @@ public class TestDataProvider {
                 "DAY",
                 15.0f,
                 "BEFORELUNCH",
-                "Tomar con abundante agua"
+                "Tomar con agua"
         ));
 
         suggestions.add(new RemovalSuggestion(
@@ -106,5 +112,4 @@ public class TestDataProvider {
 
         return suggestions;
     }
-
 }
