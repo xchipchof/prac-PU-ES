@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="256ab307-6c65-41e8-a984-37c5fcaf2082" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/java/services/exceptions/AIException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/services/exceptions/AIException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/services/exceptions/AnyCurrentPrescriptionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/services/exceptions/AnyCurrentPrescriptionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/services/exceptions/BadPromptException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/services/exceptions/BadPromptException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/services/exceptions/HealthCardIDException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/services/exceptions/HealthCardIDException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/services/exceptions/NotCompleteMedicalPrescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/services/exceptions/NotCompleteMedicalPrescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/services/suggestions/InsertionSuggestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/services/suggestions/InsertionSuggestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/services/suggestions/ModifiySuggestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/services/suggestions/ModifySuggestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/services/suggestions/RemovalSuggestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/services/suggestions/RemovalSuggestion.java" afterDir="false" />
-    </list>
+    <list default="true" id="256ab307-6c65-41e8-a984-37c5fcaf2082" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,23 +16,26 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="37Qxs1cPwvjfS5pydQyF03qx9lC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "paquet-services-impl",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Uni/AMSA/prac-PU-ES"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;paquet-services-impl&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Uni/AMSA/prac-PU-ES&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
