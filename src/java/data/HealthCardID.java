@@ -4,7 +4,7 @@ import data.exceptions.NotAlphanumericFormatException;
 final public class HealthCardID {
     private final String personalID;
 
-    public HealthCardID(String code) throws IllegalArgumentException {
+    public HealthCardID(String code) throws IllegalArgumentException, NotAlphanumericFormatException {
         if (code == null)
                 throw new IllegalArgumentException("No nulls allowed as HealthCardID codes.");
         else if (!code.matches("^[A-Za-z0-9]+$"))

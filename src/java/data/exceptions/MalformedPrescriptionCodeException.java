@@ -1,6 +1,6 @@
 package data.exceptions;
 
-public class MalformedPrescriptionCodeException extends RuntimeException {
+public class MalformedPrescriptionCodeException extends Exception {
     public MalformedPrescriptionCodeException(String message) {
         super(message);
     }

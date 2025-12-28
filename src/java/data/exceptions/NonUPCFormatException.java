@@ -1,6 +1,6 @@
 package data.exceptions;
 
-public class NonUPCFormatException extends RuntimeException {
+public class NonUPCFormatException extends Exception {
     public NonUPCFormatException(String message) {
         super(message);
     }
