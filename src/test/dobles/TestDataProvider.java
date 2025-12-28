@@ -3,6 +3,7 @@ package dobles;
 import data.HealthCardID;
 import data.ProductID;
 import data.ePrescripCode;
+import data.exceptions.NonUPCFormatException;
 import medicalconsultation.*;
 import services.suggestions.InsertionSuggestion;
 import services.suggestions.ModifySuggestion;
@@ -83,7 +84,7 @@ public class TestDataProvider {
     }
 
 
-    public static List<Suggestion> generaSuggestions() throws Exception {
+    public static List<Suggestion> generaSuggestions() throws IllegalArgumentException, NonUPCFormatException {
         List<Suggestion> suggestions = new ArrayList<>();
 
         suggestions.add(new InsertionSuggestion(
