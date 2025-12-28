@@ -1,5 +1,6 @@
 package services;
 
+import data.exceptions.NonUPCFormatException;
 import services.exceptions.AIException;
 import services.exceptions.BadPromptException;
 import services.suggestions.Suggestion;
@@ -11,5 +12,5 @@ public interface DecisionMakingAI {
 
     String getSuggestions(String prompt) throws BadPromptException;
 
-    List<Suggestion> parseSuggest(String aiAnswer);
+    List<Suggestion> parseSuggest(String aiAnswer) throws NonUPCFormatException;
 }
