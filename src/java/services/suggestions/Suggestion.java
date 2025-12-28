@@ -11,4 +11,12 @@ public class Suggestion {
         this.item = product;
         this.operation = op;
     }
+
+    public String getOperation(){
+        return this.operation;
+    }
+
+    public ProductID getItem() {
+        return this.item;
+    }
 }
