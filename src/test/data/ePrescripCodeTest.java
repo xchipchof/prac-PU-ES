@@ -7,28 +7,25 @@ import org.junit.jupiter.api.Test;
 
 public class ePrescripCodeTest {
 
-    @Test
-    public void checkConstructor(){
-        ePrescripCode codiPrescripcio = new ePrescripCode("294914009");
+  @Test
+  public void checkConstructor() {
+    ePrescripCode codiPrescripcio = new ePrescripCode("2949140093");
 
-        assertEquals("294914009", codiPrescripcio.getCode());
-    }
+    assertEquals("2949140093", codiPrescripcio.getCode());
+  }
 
+  @Test
+  public void codiNoNumeric() {
+    String codiLleig = "dbashj281sajhdb";
+    assertThrows(MalformedPrescriptionCodeException.class,
+        () -> new ePrescripCode(codiLleig));
+  }
 
-    @Test
-    public void codiNoNumeric(){
-        String codiLleig = "dbashj281sajhdb";
-        assertThrows(MalformedPrescriptionCodeException.class,
-                () -> new ePrescripCode(codiLleig)
-        );
-    }
-
-    @Test
-    public void codiNullTest(){
-        assertThrows(
-                IllegalArgumentException.class,
-                () -> new ePrescripCode(null)
-        );
-    }
+  @Test
+  public void codiNullTest() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> new ePrescripCode(null));
+  }
 
 }
