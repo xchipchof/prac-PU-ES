@@ -5,8 +5,6 @@ import medicalconsultation.MedicalHistory;
 import medicalconsultation.MedicalPrescription;
 import services.exceptions.HealthCardIDException;
 
-import java.net.ConnectException;
-
 public class InvalidCIPHealthNationalServiceMock extends SuccessfulHealthNationalServiceMock {
     @Override
     public MedicalHistory getMedicalHistory(HealthCardID cip) throws HealthCardIDException {

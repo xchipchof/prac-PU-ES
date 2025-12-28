@@ -5,7 +5,7 @@ import data.HealthCardID;
 import medicalconsultation.MedicalHistory;
 import medicalconsultation.MedicalPrescription;
 import services.exceptions.AnyCurrentPrescriptionException;
-import services.exceptions.AnyCurrentPrescriptionException;
+
 
 public class NoPrescriptionHealthNationalServiceMock extends SuccessfulHealthNationalServiceMock {
     @Override

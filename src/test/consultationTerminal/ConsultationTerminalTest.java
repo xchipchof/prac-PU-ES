@@ -66,7 +66,6 @@ public class ConsultationTerminalTest {
                 terminal.initRevision(validCIP, illness));
     }
 
-    // --- GRUPO 2: TESTS DE getSuggestions (Contrato 2) ---
 
     @Test
     void testGetSuggestions_Success() throws Exception {
@@ -86,18 +85,15 @@ public class ConsultationTerminalTest {
         terminal.setHealthNationalService(new SuccessfulHealthNationalServiceMock());
         terminal.initRevision(validCIP, illness);
 
-        // Según contrato: BadPromptException si el prompt es nulo o vacío
         assertThrows(BadPromptException.class, () -> terminal.getSuggestions(""));
     }
 
     @Test
     void testGetSuggestions_ProceduralException() {
-        // Precondición fallida: No se ha llamado a initRevision antes
         assertThrows(ProceduralException.class, () ->
                 terminal.getSuggestions("Prompt válido"));
     }
 
-    // --- GRUPO 3: TESTS DE parseSuggest (Contrato 3) ---
 
     @Test
     void testParseSuggest_Consistency() throws Exception {
