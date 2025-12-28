@@ -10,30 +10,38 @@ import services.exceptions.NotCompleteMedicalPrescription;
 
 import java.net.ConnectException;
 
-public class HealthNationalServiceMock implements HealthNationalService {
+public class SuccessfulHealthNationalServiceMock implements HealthNationalService {
 
 
     @Override
     public MedicalHistory getMedicalHistory(HealthCardID cip)
             throws ConnectException, HealthCardIDException {
-        return null;
+        try {
+            return TestDataProvider.generaHistorialBuit();
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     @Override
     public MedicalPrescription getMedicalPrescription(HealthCardID cip, String illness)
             throws ConnectException, HealthCardIDException, AnyCurrentPrescriptionException {
-        return null;
+        try {
+            return TestDataProvider.generaPrescripcioVigent();
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     @Override
     public MedicalPrescription sendHistoryAndPrescription(HealthCardID cip, MedicalHistory hce, String illness, MedicalPrescription mPresc)
             throws ConnectException, HealthCardIDException, AnyCurrentPrescriptionException, NotCompleteMedicalPrescription {
-        return null;
+        return mPresc;
     }
 
     @Override
     public MedicalPrescription generateTreatmCodeAndRegister(MedicalPrescription ePresc)
             throws ConnectException {
-        return null;
+        return ePresc;
     }
 }

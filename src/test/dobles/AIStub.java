@@ -19,7 +19,7 @@ public class AIStub implements DecisionMakingAI {
 
     @Override
     public String getSuggestions(String prompt) throws BadPromptException {
-        if(prompt == null || prompt.trim().isEmpty()) throw new BadPromptException("Prompt given was null or empty.");
+        if (prompt == null || prompt.trim().isEmpty()) throw new BadPromptException("Prompt given was null or empty.");
 
         return TestDataProvider.generaPrompt();
     }
